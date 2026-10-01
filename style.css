@@ -4,19 +4,19 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Courier New;
   color: #222;
 }
 
 header {
-  background-color: #028090;
-  color: white;
+  background-color: #000000;
+  color: #00ff00;
   padding: 20px;
   text-align: center;
 }
 
 header nav a {
-	color: white;
+	color: #00ff00;
 	margin: 0 10px;
 	text-decleration: none;
 
@@ -28,23 +28,24 @@ section {
 
 }
 
-#projects {
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
 
 }
 
 .card {
-	background-color: #028090;
+	background-color: #000000;
 	border: 1px solid #ccc;
 	border-radius:
 
 }
 
+body {
+background-color: #000000;
+color: #00ff00;	
+}	
+
 footer {
-  background-color: #013a40;
-  color: white;
+  background-color: #000000;
+  color: #00ff00;
   text-align: center;
   padding: 15px;
 }
