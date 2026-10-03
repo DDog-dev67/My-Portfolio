@@ -1,51 +1,122 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+*body {
   margin: 0;
-  font-family: Courier New;
-  color: #222;
+  background-color: black;
 }
 
-header {
-  background-color: #000000;
-  color: #00ff00;
+#main-frame {
+  box-sizing: border-box;
+  width: 1100px;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: black;
+  color: lime;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 800px;
+  max-width: 100%;
   padding: 20px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#menu_buttons {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 200px;
+  max-width: 100%;
+  padding: 8px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#spacer_10_px {
+  width: 1100px;
+  height: 10px;
+  margin: 0 auto;
+}
+
+#spacer_20_px {
+  width: 1100px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+#spacer_50_px {
+  width: 1100px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  max-width: 100%;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
+  color: lime;
+  font-family: "Courier New", Courier, monospace;
 }
 
-header nav a {
-	color: #00ff00;
-	margin: 0 10px;
-	text-decleration: none;
+/*CSS Classes */
 
+.hover-link {
+  color: lightblue;
 }
 
-section {
-	padding: 40px 20px;
-	
-
+.hover-link:hover {
+  color: yellow;
 }
 
-
+.title2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.card {
-	background-color: #000000;
-	border: 1px solid #ccc;
-	border-radius:
-
+.row {
+  display: flex;
+  gap: 20px;
 }
 
-body {
-background-color: #000000;
-color: #00ff00;	
-}	
+.box {
+  flex: none;
+}
 
-footer {
-  background-color: #000000;
-  color: #00ff00;
-  text-align: center;
-  padding: 15px;
+.box:first-child {
+  width: 200px;
+}
+
+.box:last-child {
+  width: 800px;
+}
+
+.menu-button {
+  box-sizing: border-box;
+  width: 180px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  background: black;
+  color: lightblue;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: yellow;
+  border-color: yellow;
 }
