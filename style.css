@@ -129,3 +129,50 @@ background-color:black;
 border:2px white solid;
 box-shadow: 10px 10px 5px black;
 }
+
+/* ======================================================
+   RESPONSIVE OVERRIDES FOR MOBILE & TABLET
+   ====================================================== */
+
+/* Mobile Devices (Screens 768px wide and smaller) */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Stack the sidebar and content vertically instead of side-by-side */
+  .row {
+    flex-direction: column;
+  }
+
+  .box:first-child,
+  .box:last-child {
+    width: 100%;
+  }
+
+  /* 2. Prevent fixed-width spacers from causing horizontal scrolling */
+  #spacer_10_px,
+  #spacer_20_px,
+  #spacer_50_px {
+    width: 100%;
+  }
+
+  /* 3. Allow videos to shrink on narrow screens */
+  video {
+    width: 100%;[cite: 1]
+    box-sizing: border-box;
+    margin: 15px 0;[cite: 1]
+  }
+
+  /* 4. Reduce outer padding so content fits comfortably */
+  #main-frame {
+    padding: 15px;[cite: 1]
+  }
+
+  #content {
+    padding: 15px;[cite: 1]
+  }
+
+  /* 5. Ensure the footer fits small displays */
+  #footer {
+    width: 90%;[cite: 1]
+    font-size: 12px;[cite: 1]
+  }
+}
