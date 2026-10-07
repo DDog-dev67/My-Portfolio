@@ -167,7 +167,7 @@ box-shadow: 10px 10px 5px black;
   }
 
   #content {
-    padding: 15px;[cite: 1]
+    padding: 15px;[cite: 1] border-color: red
   }
 
   /* 5. Ensure the footer fits small displays */
