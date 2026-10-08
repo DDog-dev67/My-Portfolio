@@ -111,6 +111,7 @@ body {
   border-radius: 10px;
   background: black;
   color: lightblue;
+  background-image: linear-gradient(lime, black);
   font-family: inherit;
   font-weight: bold;
   cursor: pointer;
@@ -174,5 +175,7 @@ box-shadow: 10px 10px 5px black;
   #footer {
     width: 90%;[cite: 1]
     font-size: 12px;[cite: 1]
+	
   }
 }
+
