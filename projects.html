@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <!--For mobile/tablet-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--For mobile/tablet-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!--Title + implement style.css-->
+  <!--Title + import style.css-->
   <title>Projects</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phone.css" media="screen and (max-width: 480px)">
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
 </head>
-
 <body>
-	<!--Implement div for special gif used in header as well as dimensions--> 
+
+	<!--Import div for special gif used in header as well as dimensions-->
 	<div id="main-frame">
     	<img src="DD_header_animated.gif"
 			 alt="DariusD IT Projects"
@@ -21,7 +22,7 @@
 			 style="display: block; max-width: 100%; height: auto; margin: 0 auto;">
 		<div id="spacer_50_px" aria-hidden="true"></div>
 		
-		<!--Divs used for buttons so that they appear on the side of the page and able to take user to other pages-->
+		<!--Import div for buttons used as links to other pages arranged on the side for desktop-->
 		<div class="row">
 			<div class="box">
 				<div id="spacer_50_px" aria-hidden="true"></div>
@@ -48,33 +49,27 @@
 	
 			</div>
 			<div class="box">
-				<!--<h1>IT Projects - OntarioTech and beyond</h1>-->
+				<!--<h1>My projects</h1>-->
 				<div id="spacer_20_px" aria-hidden="true"></div>
 				<div id="spacer_50_px" aria-hidden="true"></div>
 				<div id="content">
-				
-				  <!--Page description-->
 				  <p class="title2">My Projects</p>
 				  <p>This is a list of 4 of my projects that I've worked on as well as a brief description of each.
 						<br><br>
-						
 				<!--Project 1-->		
 				<p class="title2">1. TrueNorthSec</p>
 				<p>A site I created with the purpose of making cybersecurity concepts/terms as simplistic as possible. I also add cybersecurity news reports from time to time.
 						<br><br>
-						
-				<!--Project 2-->
+				<!--Project 2-->		
 				<p class="title2">2. NorthernOverwatch</p>
 				<p>A site that my father started and I helped with, that acts as a magazine with different cybersecurity stories explained as simply as possible for everyone to understand.
 					There is also a subscription service that gives subscribers access to all of our content that regular users do not get.
 						<br><br>
-				
 				<!--Project 3-->
 				<p class="title2">3. Matrix Music Video</p>
 				<p> A project I worked on in my grade 12 communications technology class. The goal of the project was to demonstrate effective use of video editing software (Adobe Premiere,
 				Davinci Resolve, etc) and create a music video that includes recorded clips with seamless transitions, appropriate music choice, as well as good cinematogrophy.
 						<br><br>
-				
 				<!--Project 4-->
 				<p class="title2">4. 1st year Networking I Final Project</p>
 				<p>This was our final project in my year 1 Intro to Networking I class. In this project, we had to basically create our own network with a specific number of devices,
@@ -85,7 +80,7 @@
   
 		</div>
 	</div>
-	<!--Div for footer that includes copyright and email-->
+	<!--Footer includes copyright and email-->
 	<div id="footer">&copy; 2026 Darius Dogaru. All rights reserved.</div>
 </body>
 </html>
