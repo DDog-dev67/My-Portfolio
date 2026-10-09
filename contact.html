@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-   <!--For mobile/tablet-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--For mobile/tablet-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!--Title + implement style.css-->
+  <!--Title + import style.css-->
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phone.css" media="screen and (max-width: 480px)">
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
 </head>
 <body>
 
-	<!--Implement div for special gif used in header as well as dimensions--> 
+	<!--Import div for special gif used in header as well as dimensions-->
 	<div id="main-frame">
     	<img src="DD_header_animated.gif"
 			 alt="DariusD IT Projects"
@@ -21,7 +22,7 @@
 			 style="display: block; max-width: 100%; height: auto; margin: 0 auto;">
 		<div id="spacer_50_px" aria-hidden="true"></div>
 		
-		<!--Divs used for buttons so that they appear on the side of the page and able to take user to other pages-->
+		<!--Import div for buttons used as links to other pages arranged on the side for desktop-->
 		<div class="row">
 			<div class="box">
 				<div id="spacer_50_px" aria-hidden="true"></div>
@@ -53,69 +54,62 @@
 				<div id="spacer_50_px" aria-hidden="true"></div>
 				<div id="content">
 				<p class="title2">Contact me</p>
-				
-				<!--"Sends" form to my email-->
+				<!--"Sends" completed form to designated address-->
 				<form 
 					action="mailto:darius.dogaru@ontariotechu.net"
 					method="post"
 					enctype="text/plain"
 					name="form">
-					
-				<!--First name (required field)-->	
+				<!--First name (required)-->				
 				<p>
 				<label for="Fname">First Name :</label>
 				<input type="text" name="Fname" size="32"
 				placeholder="Enter your first name" required>
 				</p>
-				
-				<!--Last name (required field)-->
+				<!--Last name (required)-->
 				<p>
 				<label for="Lname">Last Name :</label>
 				<input type="text" name="Lname" size="32"
 				placeholder="Enter your last name" required>
 				</p>
-				
-				<!--Email (required field)-->
+				<!--Email (required)-->
 				<p>
 				<label for="email">Email :</label>
 				<input type="email" name="email" size="32" 
 				placeholder="Enter your email address" required>
 				</p>
-				
-				<!--Phone # (required field)-->
+				<!--Phone # (required)-->
 				<p>
 				<label for="phone">Phone number:</label>
 				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 				placeholder="Enter your phone number" required>
 				</p>
-				
 				<!--Comments (not required)-->
 				<p>
 				<label for="Comments">Comments</label>
 				<br>
 				<textarea name="Comments" cols="60" rows="6"></textarea>
 				</p>
-				
-				<!--Checkbox (not required) that "puts" the email you submitted on the recipient's e-list-->
+				<!--Checkbox that "puts" user's email into recipient's e-list (not required)-->
 				<p>
 				<input type="checkbox" name="maillist">
 				<label for="maillist">Put me on your e-list</label>
 				</p>
+				<!--Choice between yes or no (not required)-->
 				</p>
-				<!--Choice between yes and no (not required)-->
 				<label>Do you like this feedback form</label>
 				<label><input type="radio" name="answer" value="yes">Yes</label>
 				<label><input type="radio" name="answer" value="no">No</label>
 				<br><br>
-				
-				<!--submit button that "sends" form to recipient-->
 				<input type="submit" value="Click here to submit the form">
+				<input type="reset" value="Click here to reset the form">
 				</form>
 				</div>
 			</div>
   
 		</div>
 	</div>
+	<!--Footer includes copyright and email-->
 	<div id="footer">&copy; 2026 Darius Dogaru. All rights reserved.</div>
 </body>
 </html>
