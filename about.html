@@ -1,20 +1,18 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--For mobile/tablet-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--For mobile/tablet-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!--Title + import style.css-->
-  <title>Projects</title>
+  <!--Title + implement style.css-->
+  <title>About Me</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="phone.css" media="screen and (max-width: 480px)">
   <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
 </head>
 <body>
-
-	<!--Import div for special gif used in header as well as dimensions-->
+	<!--Implement div for special gif used in header as well as dimensions--> 
 	<div id="main-frame">
     	<img src="DD_header_animated.gif"
 			 alt="DariusD IT Projects"
@@ -23,7 +21,7 @@
 			 style="display: block; max-width: 100%; height: auto; margin: 0 auto;">
 		<div id="spacer_50_px" aria-hidden="true"></div>
 		
-		<!--Import div for buttons used as links to other pages arranged on the side for desktop-->
+		<!--Divs used for buttons so that they appear on the side of the page and able to take user to other pages-->
 		<div class="row">
 			<div class="box">
 				<div id="spacer_50_px" aria-hidden="true"></div>
@@ -49,39 +47,43 @@
 				</div>
 	
 			</div>
+			
 			<div class="box">
-				<!--<h1>My projects</h1>-->
+				<!--<h1>About Me</h1>-->
 				<div id="spacer_20_px" aria-hidden="true"></div>
 				<div id="spacer_50_px" aria-hidden="true"></div>
 				<div id="content">
-				  <p class="title2">My Projects</p>
-				  <p>This is a list of 4 of my projects that I've worked on as well as a brief description of each.
+				  <p class="title2">About Me</p>
+				  <img src="DD_Abt_Me.jpg" width="420" height="240">
+				  <p>Hi there! My name is Darius Dogaru. I am a second year Networking & IT Security student at Ontario Tech University. I made this site to display the various IT Projects
+				  I've worked on over the years!
 						<br><br>
-				<!--Project 1-->		
-				<p class="title2">1. TrueNorthSec</p>
-				<p>A site I created with the purpose of making cybersecurity concepts/terms as simplistic as possible. I also add cybersecurity news reports from time to time.
-						<br><br>
-				<!--Project 2-->		
-				<p class="title2">2. NorthernOverwatch</p>
-				<p>A site that my father started and I helped with, that acts as a magazine with different cybersecurity stories explained as simply as possible for everyone to understand.
-					There is also a subscription service that gives subscribers access to all of our content that regular users do not get.
-						<br><br>
-				<!--Project 3-->
-				<p class="title2">3. Matrix Music Video</p>
-				<p> A project I worked on in my grade 12 communications technology class. The goal of the project was to demonstrate effective use of video editing software (Adobe Premiere,
-				Davinci Resolve, etc) and create a music video that includes recorded clips with seamless transitions, appropriate music choice, as well as good cinematogrophy.
-						<br><br>
-				<!--Project 4-->
-				<p class="title2">4. 1st year Networking I Final Project</p>
-				<p>This was our final project in my year 1 Intro to Networking I class. In this project, we had to basically create our own network with a specific number of devices,
-				using various techniques and skills we picked up throughout the year, such as subnetting. This project was made using Cisco Packet Tracer, which is used to design, build, and
-				troubleshoot virtual computer networks without the use of physical hardware.
+						<!--Video implemented with poster and dimensions to fit page. Poster included as well as button to play/pause-->
+						<video id="myVideo" width="320" height="240" controls>
+						<source src="DD_Intro.mp4" type="video/mp4">
+						<source src="DD_Intro.ogv" type="video/ogg">
+						Your browser does not support the video tag
+						</video>
+						<br>
+						<button type="button" class="menu-button" onclick="playPause()">Play or pause the video</button>
+						<script>
+						var myVideo=document.getElementById("myVideo");
+						function playPause() {
+						if (myVideo.paused) {
+						myVideo.play();
+						}
+						else { 
+						myVideo.pause();
+						}
+						}
+						</script>
+						
 				</div>
 			</div>
   
 		</div>
 	</div>
-	<!--Footer includes copyright and email-->
+	<!--Div for footer that includes copyright and email-->
 	<div id="footer">&copy; 2026 Darius Dogaru. All rights reserved.</div>
 </body>
 </html>
